@@ -7,7 +7,7 @@ import os
 load_dotenv()
 
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
-CHANNEL_ID = os.getenv("DISCORD_CHANNEL_ID")
+CHANNEL_ID = int(os.getenv("DISCORD_CHANNEL_ID"))
 
 
 intents = discord.Intents.default()
@@ -17,6 +17,7 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_message(message):
+    print("Got message:", message.content, "in", message.channel.id)
     if message.channel.id != CHANNEL_ID:
         return
 
