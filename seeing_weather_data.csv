@@ -1,2 +1,3 @@
 date,relative_humidity_2m,cloud_cover,precipitation,dew_point_2m,visibility,wind_gusts_10m,temperature_2m,seeing_quality
 2025-11-24 00:00:00+00:00,73.0,0.0,0.0,30.22433,79199.48,8.7243,38.1128,1
+2025-11-24 22:00:00+00:00,68.0,0.0,0.0,29.345789,79199.48,9.1717,39.0128,4
