@@ -1,0 +1,14 @@
+deployments:
+  - name: seeing-ml-train
+    description: "Train RandomForest on seeing-quality dataset"
+    version: 1
+    flow_name: ml_workflow
+    entrypoint: "src/flows/prefect_flow.py:ml_workflow"
+    parameters:
+      filename: "train.csv"
+    tags: ["seeing", "training"]
+    schedule: null
+    work_pool:
+      name: "default-agent-pool"
+      work_queue_name: null
+      job_variables: {}
